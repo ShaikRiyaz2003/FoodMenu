@@ -1,8 +1,8 @@
-package Indian;
+package Trades;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class french implements ActionListener {
+public class FrenchItems implements ActionListener {
     public static String [] listfrance={"French onion soup","Chicken confit","Cassoulet","Chocolate souffle","Shallots","Truffle"};
     static JTextField [] count;
     static JLabel  [] tag;
@@ -10,7 +10,7 @@ public class french implements ActionListener {
     JLabel errornotify=new JLabel("invalid count:( Enter a valid count");
     public int [] totalfrance=new int[6];
     static JDialog french1=new JDialog();
-    static Icon sub=new ImageIcon("D:\\VSCODE\\FoodMenu\\Indian\\submit.jpg");
+    static Icon sub=new ImageIcon("../Images/submit.jpg");
     static JButton submit=new JButton("ADD TO PLATE");//new ImageIcon("D:\\VSCODE\\FoodMenu\\Indian\\submit.jpg"));
     static Font f=new Font("Verdana",Font.BOLD,20);
     public void French(){
@@ -18,7 +18,7 @@ public class french implements ActionListener {
         errornotify.setFont(new Font("Verdand",Font.BOLD,30));
         errornotify.setBounds(100,100,600,100);
         error.add(errornotify);
-        french1.setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\french.jpg")));
+        french1.setContentPane(new JLabel(new ImageIcon("Images/french.jpg")));
     submit.addActionListener(this);
         tag=new JLabel[6];
         totalfrance=new int[6];
@@ -47,7 +47,7 @@ public class french implements ActionListener {
         french1.setLayout(null);
         french1.setBounds(650,0,650,919);
         french1.setVisible(true);
-        new french();
+        new FrenchItems();
         
         return;
     }

@@ -1,8 +1,8 @@
-package Indian;
+package Trades;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class pindian  implements ActionListener {
+public class IndianItems  implements ActionListener {
     public static String [] listindia={"Veg Thali","Non-Veg Thali","Veg Pulav","Masala chai","Chicken Biryani","Chapathi","Gulab Jamun"};
     static JTextField [] count;
     static JLabel  [] tag;
@@ -23,7 +23,7 @@ public class pindian  implements ActionListener {
         
         // b.addActionListener(this);
     submit.addActionListener(this);
-       bharat.setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\pindain.jpg")));
+       bharat.setContentPane(new JLabel(new ImageIcon("Images/pindain.jpg")));
         tag=new JLabel[listindia.length];
         totalindia=new int[listindia.length];
         count=new JTextField[listindia.length];
@@ -52,7 +52,7 @@ public class pindian  implements ActionListener {
         bharat.setBounds(650,0,650,919);
         bharat.setVisible(true);
        // System.out.println("x");
-        new pindian();
+        new IndianItems();
         //System.out.println("This is pradeep's india");
         return;
     }

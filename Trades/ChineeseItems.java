@@ -1,8 +1,8 @@
-package Indian;
+package Trades;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class cuisine implements ActionListener {
+public class ChineeseItems implements ActionListener {
     public static String [] listchina={"Chicken hot and sour Soup","Chicken Manchurian","Chicken noodles","Chilli Chicken","Schezwan FriedRice","Spring Rolls"};
     static JTextField [] count;
     static JLabel  [] tag;
@@ -21,7 +21,7 @@ public class cuisine implements ActionListener {
         errornotify.setBounds(100,100,600,100);
         error.add(errornotify);
         chinese =new JDialog();
-        chinese.setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\chinese.jpg")));
+        chinese.setContentPane(new JLabel(new ImageIcon("Images/chinese.jpg")));
         // b.setBounds(100,100,50,50);
        
         // b.addActionListener(this);
@@ -54,7 +54,7 @@ public class cuisine implements ActionListener {
         chinese.setLayout(null);
         chinese.setBounds(707,0,650,919);
         chinese.setVisible(true);
-        new cuisine();
+        new ChineeseItems();
         return;
     }
 

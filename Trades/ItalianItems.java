@@ -1,8 +1,8 @@
-package Indian;
+package Trades;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class italian implements ActionListener {
+public class ItalianItems implements ActionListener {
     public static String [] listitaly={"pizza","spaghetti","carpaccio","caprese","Gelato","ciabatta"};
     static JTextField [] count;
     static JLabel  [] tag;
@@ -20,7 +20,7 @@ public class italian implements ActionListener {
         errornotify.setBounds(100,100,600,100);
         error.add(errornotify);
     submit.addActionListener(this);
-       italy.setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\Italian.jpg")));
+       italy.setContentPane(new JLabel(new ImageIcon("Images/Italian.jpg")));
         tag=new JLabel[listitaly.length];
         totalitaly=new int[listitaly.length];
         count=new JTextField[listitaly.length];
@@ -49,7 +49,7 @@ public class italian implements ActionListener {
         italy.setBounds(650,0,650,919);
         italy.setVisible(true);
        // System.out.println("x");
-       new italian();
+       new ItalianItems();
         return;
     }
 

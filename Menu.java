@@ -2,21 +2,21 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
-import Indian.*;
-public class p2 extends JDialog implements ActionListener{
+import Trades.*;
+public class Menu extends JDialog implements ActionListener{
     Scanner sc=new Scanner(System.in);
     JButton I,F,IT,C,Bill;
     JLabel back;
-    pindian indianmenu=new pindian();
-    Indian.cuisine chinamenu=new cuisine();
-    italian italymenu=new italian();
-    french frenchmenu=new french();
+    IndianItems indianmenu=new IndianItems();
+    Trades.ChineeseItems chinamenu=new ChineeseItems();
+    ItalianItems italymenu=new ItalianItems();
+    FrenchItems frenchmenu=new FrenchItems();
     finalBill finall=new finalBill();
-    pindian pradeep=new pindian();
+    IndianItems pradeep=new IndianItems();
     Color c = new Color(230, 212, 183);
     Font f=new Font("Verdana",Font.BOLD,35);
-    p2(){
-        setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\Main.jpg")));
+    Menu(){
+        setContentPane(new JLabel(new ImageIcon("Images/Main.jpg")));
         I=new JButton("INDIAN");
         F=new JButton("FRENCH");
         IT=new JButton("ITALIAN");
@@ -87,6 +87,6 @@ public class p2 extends JDialog implements ActionListener{
     }
     }
     public static void main(String[]args){
-        new p2();
+        new Menu();
     }
 }

@@ -1,4 +1,4 @@
-package Indian;
+package Trades;
 import javax.swing.*;
 import javax.swing.plaf.ColorUIResource;
 
@@ -38,7 +38,7 @@ public class finalBill{
         errornotify.setBackground(Color.BLUE);
         error.setBackground(Color.BLUE);
         anits.setBackground(new ColorUIResource(700));
-        dialog.setContentPane(new JLabel(new ImageIcon("D:\\VSCODE\\FoodMenu\\bill.jpg")));
+        dialog.setContentPane(new JLabel(new ImageIcon("Images/bill.jpg")));
         //dialog.getContentPane().add(scroll);
         name.setFont(new Font("Verdana",Font.LAYOUT_LEFT_TO_RIGHT,18));
         cost.setFont(new Font("Verdana",Font.LAYOUT_LEFT_TO_RIGHT,18));
@@ -54,9 +54,9 @@ public class finalBill{
         System.out.println("////////////////////////////////////////////////////////INDIAN///////////////////////////////");
         for(int i=0;i<in.length;i++)
         {
-        System.out.println(pindian.listindia[i]+"=========>"+in[i]);
+        System.out.println(IndianItems.listindia[i]+"=========>"+in[i]);
         if(in[i]!=0){
-        namedefault.addElement(pindian.listindia[i]);
+        namedefault.addElement(IndianItems.listindia[i]);
         costdefault.addElement(Integer.toString(in[i])+"X"+Integer.toString(indiacost[i])+"="+Integer.toString(indiacost[i]*in[i])+"/-");
         total+=indiacost[i]*in[i];
         bounds+=25;
@@ -67,29 +67,29 @@ public class finalBill{
         for(int i=0;i<chi.length;i++){
             if(chi[i]!=0)
             {
-                namedefault.addElement(cuisine.listchina[i]);
+                namedefault.addElement(ChineeseItems.listchina[i]);
                 costdefault.addElement(Integer.toString(chi[i])+"X"+Integer.toString(chinacost[i])+"="+Integer.toString(chinacost[i]*chi[i])+"/-");
                 total+=chinacost[i]*chi[i];
                 bounds+=25;
                 count++;
             }
-        System.out.println(cuisine.listchina[i]+"=========>"+chi[i]);}
+        System.out.println(ChineeseItems.listchina[i]+"=========>"+chi[i]);}
         System.out.println("////////////////////////////////////////////////////////france///////////////////////////////");
         for(int i=0;i<fra.length;i++){
             if(fra[i]!=0)
             {
-                namedefault.addElement(french.listfrance[i]);
+                namedefault.addElement(FrenchItems.listfrance[i]);
                 costdefault.addElement(Integer.toString(fra[i])+"X"+Integer.toString(frenchcost[i])+"="+Integer.toString(frenchcost[i]*fra[i])+"/-");
                 total+=frenchcost[i]*fra[i];
                 bounds+=25;
                 count++;
             }
-        System.out.println(french.listfrance[i]+"=========>"+fra[i]);}
+        System.out.println(FrenchItems.listfrance[i]+"=========>"+fra[i]);}
         System.out.println("////////////////////////////////////////////////////////Italian///////////////////////////////");
         for(int i=0;i<it.length;i++){
-        System.out.println(italian.listitaly[i]+"=========>"+it[i]);
+        System.out.println(ItalianItems.listitaly[i]+"=========>"+it[i]);
         if(it[i]!=0){
-        namedefault.addElement(italian.listitaly[i]);
+        namedefault.addElement(ItalianItems.listitaly[i]);
         costdefault.addElement(Integer.toString(it[i])+"X"+Integer.toString(italycost[i])+"="+Integer.toString(italycost[i]*it[i])+"/-");
         total+=italycost[i]*it[i];
         bounds+=25;
